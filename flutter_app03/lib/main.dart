@@ -28,7 +28,7 @@ class HomePageState extends State<HomePage> {
       } else if (op == '-') {
         r = a - b;
       }
-      _txt = '15 + 5 = $r';
+      _txt = '15 $op 5 = $r';
     });
   }
 
@@ -39,16 +39,16 @@ class HomePageState extends State<HomePage> {
       child: Column(
         children: [
           SizedBox(height: 20),
-          Text(_txt),
+          Text(_txt, textScaleFactor: 1.2),
           SizedBox(height: 20),
           ElevatedButton(
             onPressed: () => btn_pressed(op: '+'),
-            child: Text('$a+$b'),
+            child: Text('$a+$b', textScaleFactor: 1.2),
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 20),
           ElevatedButton(
             onPressed: () => btn_pressed(op: '-'),
-            child: Text('$a-$b'),
+            child: Text('$a-$b', textScaleFactor: 1.2),
           ),
         ],
       ),
