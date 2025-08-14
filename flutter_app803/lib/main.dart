@@ -91,7 +91,6 @@ class HomePageState extends State<HomePage> {
       border: outlineInputBorder(),
       hintText: 'password',
     ),
-    obscureText: true,
     keyboardType: TextInputType.text,
     style: textStyle(),
     onChanged: (text) => updateText(),
